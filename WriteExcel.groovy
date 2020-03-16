@@ -1,4 +1,4 @@
-package excelsheet
+package applicationlogin
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -34,7 +34,7 @@ public class WriteExcel {
 	@Keyword
 	def void writeToExcel(int iRow, int iCell, String iText ){
 
-		FileInputStream file = new FileInputStream (new File("C:\\Users\\vinay\\Katalon Studio\\PIMS Upload\\Data Files\\Testdata.xlsx"))
+		FileInputStream file = new FileInputStream (new File("C:\\Users\\vinay\\Katalon Studio\\RedFM\\Data Files\\Testdata.xlsx"))
 
 		XSSFWorkbook workbook = new XSSFWorkbook(file);
 
@@ -69,7 +69,7 @@ public class WriteExcel {
 
 		oCell.setCellValue(iText);
 
-		FileOutputStream outFile =new FileOutputStream(new File("C:\\Users\\vinay\\Katalon Studio\\PIMS Upload\\Data Files\\Testdata.xlsx"));
+		FileOutputStream outFile =new FileOutputStream(new File("C:\\Users\\vinay\\Katalon Studio\\RedFM\\Data Files\\Testdata.xlsx"));
 
 		workbook.write(outFile);
 

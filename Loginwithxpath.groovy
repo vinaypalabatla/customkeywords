@@ -55,13 +55,13 @@ public class Loginwithxpath {
 				WebElement input_Password =(driver).findElement(By.xpath("//input[@placeholder='Password']"));
 				input_Password.clear();
 				input_Password.sendKeys(exp_Password);
-				WebElement input_Submit =(driver).findElement(By.xpath("//*[@value='Login' or @value = 'Sign In' or @id='submit' or contains(@class,'loginButton')]")).click()
+				WebElement input_Submit =(driver).findElement(By.xpath("//*[@value='Login' or @value = 'Sign In' or @id='submit' or contains(@class,'loginButton') or @class='btn btn-primary']")).click()
 			}
 			catch(error) {
 				WebElement input_Password =(driver).findElement(By.xpath("//input[@type='password']"));
 				input_Password.clear();
 				input_Password.sendKeys(exp_Password);
-				WebElement input_Submit =(driver).findElement(By.xpath("//*[@value='Login' or @value = 'Sign In' or @id='submit' or contains(@class,'loginButton')]")).click()
+				WebElement input_Submit =(driver).findElement(By.xpath("//*[@value='Login' or @value = 'Sign In' or @id='submit' or contains(@class,'loginButton') or @class='btn btn-primary']")).click()
 			}
 			finally {
 				print ("Element not present")
@@ -75,13 +75,13 @@ public class Loginwithxpath {
 				WebElement input_Password =(driver).findElement(By.xpath("//input[@placeholder='Password']"));
 				input_Password.clear();
 				input_Password.sendKeys(exp_Password);
-				WebElement input_Submit =(driver).findElement(By.xpath("//*[@value='Login' or @value = 'Sign In' or @id='submit' or contains(@class,'loginButton')]")).click()
+				WebElement input_Submit =(driver).findElement(By.xpath("//*[@value='Login' or @value = 'Sign In' or @id='submit' or contains(@class,'loginButton') or @class='btn btn-primary']")).click()
 			}
 			catch(nextelement) {
 				WebElement input_Password =(driver).findElement(By.xpath("//input[@type='password']"));
 				input_Password.clear();
 				input_Password.sendKeys(exp_Password);
-				WebElement input_Submit =(driver).findElement(By.xpath("//*[@value='Login' or @value = 'Sign In' or @id='submit' or contains(@class,'loginButton')]")).click()
+				WebElement input_Submit =(driver).findElement(By.xpath("//*[@value='Login' or @value = 'Sign In' or @id='submit' or contains(@class,'loginButton') or @class='btn btn-primary']")).click()
 			}
 			finally {
 				print ("Element not present")
